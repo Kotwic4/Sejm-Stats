@@ -91,7 +91,6 @@ class DataGetter {
                                 .getAsString();
                     else
                         reason = "Others/no reason";
-                    System.out.println(cost + " " + reason);
                     expenses.add(new Expense(cost, reason));
                 }
             }

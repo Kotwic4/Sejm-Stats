@@ -14,6 +14,11 @@ class Person{
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return name;
+    }
+
     void addTrip(Trip trip){
         this.trips.add(trip);
     }
