@@ -33,7 +33,7 @@ class DataLogic {
             throw new IOException(e);
         }
     }
-    String getResult() throws IOException {
+    String getResult(){
         StringBuilder builder = new StringBuilder();
         Person person;
         double val;
@@ -71,7 +71,7 @@ class DataLogic {
         return builder.toString();
     }
 
-    private double getExpensesSum(String name) throws IOException {
+    private double getExpensesSum(String name){
         Person person = null;
         for(Person p : persons){
             if(p.name.equals(name)){
@@ -79,14 +79,14 @@ class DataLogic {
             }
         }
         if ( person == null){
-            throw new IOException("Nie znaleziono posla o nazwie :" + name);
+            throw new IllegalArgumentException("Nie znaleziono posla o nazwie :" + name);
         }
         else {
             return person.getExpensesSum();
         }
     }
 
-    private double getSmallExpenses(String name) throws IOException {
+    private double getSmallExpenses(String name){
         Person person = null;
         for(Person p : persons){
             if(p.name.equals(name)){
@@ -94,7 +94,7 @@ class DataLogic {
             }
         }
         if ( person == null){
-            throw new IOException("Nie znaleziono posla o nazwie :" + name);
+            throw new IllegalArgumentException("Nie znaleziono posla o nazwie :" + name);
         }
         else {
             return person.getExpensesSum(RESON);

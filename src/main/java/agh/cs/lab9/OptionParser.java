@@ -6,7 +6,7 @@ import java.util.LinkedList;
 
 class OptionParser {
 
-    Option parseOption(String[] args) throws IllegalArgumentException{
+    Option parseOption(String[] args){
         OptionType type = null;
         String argument = null;
         if(args.length < 2) throw new IllegalArgumentException("Zbyt mało argumentów, minimalna liczba argumentów 2");
