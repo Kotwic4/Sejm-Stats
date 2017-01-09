@@ -1,5 +1,7 @@
 package agh.cs.lab9;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.LinkedList;
 
 class OptionParser {
@@ -39,7 +41,7 @@ class OptionParser {
                 break;
             default:
                 String[] array = {"sumExepenses","smallExepense","avgExepenses","numberTrips","lenghtTrip","exepensiveTrip","italy"};
-                throw new IllegalArgumentException("Nie poprawny typ zapytania, poprawne typy: " + array);
+                throw new IllegalArgumentException("Nie poprawny typ zapytania, poprawne typy: " + new LinkedList<>(Arrays.asList(array)));
 
         }
         return new Option(type,termNumber,argument);
