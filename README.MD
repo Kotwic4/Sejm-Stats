@@ -1,3 +1,5 @@
-Created by Radomir Krawczykiewicz
+# Sejm-Stats
 
-Task problem description : https://github.com/apohllo/obiektowe-lab/tree/master/lab9
+Second project assigment for Object Oriented Programing course at AGH UST.
+
+Assigment description can be found [here](https://github.com/apohllo/obiektowe-lab/tree/master/lab9)
